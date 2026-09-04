@@ -1,0 +1,19 @@
+services:
+  flight-radar:
+    build: .
+    container_name: flight-radar
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      HOME_LAT: "54.1370"
+      HOME_LON: "-1.4200"
+      BBOX_LAMIN: "53.90"
+      BBOX_LAMAX: "54.40"
+      BBOX_LOMIN: "-1.90"
+      BBOX_LOMAX: "-0.95"
+      MAX_RANGE_KM: "40"
+      POLL_INTERVAL_SECONDS: "20"
+      # Optional: set these for a higher OpenSky rate limit
+      # OPENSKY_USERNAME: "your_username"
+      # OPENSKY_PASSWORD: "your_password"
