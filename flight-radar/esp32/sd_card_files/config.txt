@@ -1,0 +1,9 @@
+# Flight radar config - place this file as /config.txt on the SD card root.
+# key=value, one per line. Lines starting with # are ignored.
+# Any key you omit falls back to the default baked into the sketch.
+
+WIFI_SSID=YOUR_WIFI_SSID
+WIFI_PASSWORD=YOUR_WIFI_PASSWORD
+SERVER_HOST=192.168.1.50
+SERVER_PORT=8000
+RANGE_KM=40
